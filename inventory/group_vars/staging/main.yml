@@ -1,0 +1,6 @@
+---
+notes_app_port: 8000
+notes_postgres_db: notes
+notes_postgres_user: notes
+notes_ssh_port: 22
+# Если есть старый том, сохраняйте прежние DB/USER и пароль.

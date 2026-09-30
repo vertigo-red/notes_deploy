@@ -1,0 +1,10 @@
+---
+- name: Проверить установленный Notes без повторного развёртывания
+  hosts: staging:prod
+  become: true
+  gather_facts: false
+  tasks:
+    - name: Выполнить проверки установленного стека
+      ansible.builtin.import_role:
+        name: notes_stack
+        tasks_from: verify

@@ -1,0 +1,7 @@
+---
+- name: Развернуть Notes на Ubuntu 22.04
+  hosts: staging:prod
+  become: true
+  gather_facts: true
+  roles:
+    - role: notes_stack
